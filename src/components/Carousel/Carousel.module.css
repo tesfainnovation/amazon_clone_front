@@ -1,0 +1,27 @@
+
+/* .carouselWrapper {
+  position: relative;
+} */
+
+.hero_img {
+    position: relative;
+}
+
+
+.hero_img::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(225, 225, 225, 0),
+    rgba(255, 255, 255)
+  ); /* Dark gradient overlay at the bottom */
+}
+
+.react-responsive-carousel .carousel .slide {
+  /* Override default carousel styles if needed */
+  background-color: #000; /* Example: if you want to set a background */
+}

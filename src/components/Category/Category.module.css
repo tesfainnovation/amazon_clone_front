@@ -1,0 +1,71 @@
+.category {
+  height: 350px;
+  width: 350px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease-in-out;
+
+}
+
+/* Hover effect */
+.category:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15); /* Increase shadow on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.category img {
+  width: 100%;
+  object-fit: contain;
+  max-height: 250px;
+  padding: 0px 10px;
+}
+
+.category a {
+  text-decoration: none;
+  color: rgb(35, 35, 35);
+}
+
+.category h2,
+.category p {
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.category p {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(9, 132, 209);
+}
+
+.category_container {
+  position: relative;
+  margin-top: -10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+  place-items: center;
+  gap: 20px; /* Space between grid items */
+
+}
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+  .category_container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  }
+}
+
+/* For screens smaller than 900px */
+@media (max-width: 900px) {
+  .category_container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+}
+
+/* For screens smaller than 600px */
+@media (max-width: 600px) {
+  .category_container {
+    grid-template-columns: 1fr; /* 1 column */
+  }
+}
