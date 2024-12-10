@@ -1,4 +1,3 @@
-
 import classes from "./Signup.module.css";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { auth } from "../../utility/Firebase";
@@ -76,7 +75,7 @@ function Auth() {
       </Link>
 
       {/* Form */}
-      <div className={classes.login_containe }>
+      <div className={classes.login_container}>
         <h1>Sign in</h1>
         {navStateData?.state?.message && (
           <small
